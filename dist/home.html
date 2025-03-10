@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://kit.fontawesome.com/a6726e13c6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <!-- Header START -->
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="img/sblogo.svg" alt="" class="w-12">
+                    <ul class="header__navd">
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">REWARDS</a></li>
+                        <li><a href="#">MERCHANDISE</a></li>
+                    </ul>
+                </div>
+                <div class="header__action">
+                    <ul class="header__navm">
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">REWARDS</a></li>
+                        <li><a href="#">MERCHANDISE</a></li>
+                    </ul>
+                    <div class="header__btn">
+                        <div class="header__signIn">
+                            <a href="#"><i class="fa-solid fa-location-dot"></i>Find a Store</a>
+                            <div>
+                                <a href="" class="btn-light">Sign In</a>
+                                <a href="" class="btn-dark">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__btn hidden md:block">
+                    <div class="header__signIn md:flex md:gap-4 md:items-center">
+                        <a href="#" class="flex gap-2 items-center">
+                            <i class="fa-solid fa-location-dot"></i>Find a Store</a>
+                        <div class="flex flex-col gap-2 md:flex md:flex-row md:gap-4">
+                            <a href="" class="btn-light">Sign In</a>
+                            <a href="" class="btn-dark">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger__menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header END -->
+
+    <!-- hero start -->
+    <div class="relative">
+        <img src="./img/home-banner.jpeg" alt="" class="h-[480px] md:h-[75vh] object-cover w-full">
+        <div class="absolute top-[20%] md:top-[35%] md:mx-[20%]">
+            <div class="container space-y-6">
+                <h1 class="text-[40px] font-roboto font-bold text-darkGreen md:text-[70px]">Savor the Joys of Spring</h1>
+                <a href="" class="btn-light !max-w-[200px]">Discover the flavors</a>
+            </div>
+        </div>
+    </div>
+    <!-- hero end -->
+
+    <!-- menu start -->
+    <div class="container">
+        <div class="cards grid grid-cols-1 md:grid-cols-2 gap-7 md:place-self-center">
+            <div class="bg-darkGreen text-light md:max-w-[615px]">
+                <img src="./img/card1.jpeg" alt="" class="max-h-[280px] w-full object-cover">
+                <div class="text-center space-y-6 py-8">
+                    <h3 class="text-2xl font-bold">Your Spring Uplift</h3>
+                    <p>Rich, butterfly sips with nutty nougat sprinkles</p>
+                    <a href="" class="btn-light !max-w-[200px] !border-light">Sip, sip,go</a>
+                </div>
+            </div>
+            <div class="bg-darkGreen text-light md:max-w-[615px]">
+                <img src="./img/card2.jpeg" alt="" class="max-h-[280px] w-full object-cover">
+                <div class="text-center space-y-6 py-8">
+                    <h3 class="text-2xl font-bold">All Senses Awaken</h3>
+                    <p>Elevate the season with comforting bites and uplifting twists.</p>
+                    <a href="" class="btn-light !max-w-[200px] !border-light">Explore</a>
+                </div>
+            </div>
+            <div class="bg-lightGreen text-darkGreen md:max-w-[615px]">
+                <img src="./img/card3.jpeg" alt="" class="max-h-[280px] w-full object-cover">
+                <div class="text-center space-y-6 py-8">
+                    <h3 class="text-2xl font-bold">Milky Island</h3>
+                    <p>Fill your favorite drink and go wherever the day takes you.</p>
+                    <a href="" class="btn-light !max-w-[200px] !border-darkGreen">See more</a>
+                </div>
+            </div>
+            <div class="bg-lightGreen text-darkGreen md:max-w-[615px]">
+                <img src="./img/card4.jpg" alt="" class="max-h-[280px] w-full object-cover">
+                <div class="text-center space-y-6 py-8">
+                    <h3 class="text-2xl font-bold">No time to head out?</h3>
+                    <p>Have your favorites delivered straight to your doorstep.</p>
+                    <a href="" class="btn-light !max-w-[200px] !border-darkGreen">Learn more</a>
+                </div>
+            </div>
+            <div class="bg-lightYellow text-darkGreen md:max-w-[615px] block md:hidden">
+                <img src="./img/card5.jpeg" alt="" class="max-h-[280px] w-full object-cover">
+                <div class="text-center space-y-6 py-8">
+                    <h3 class="text-2xl font-bold">Starbucks Stories</h3>
+                    <p>Continuing to inspire and nurture the human spirit–one person, one cup and one neighborhood at a time.</p>
+                    <a href="" class="btn-light !max-w-[200px]">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-lightYellow text-darkGreen hidden md:block md:max-w-[982px] my-7 md:place-self-center">
+            <div class="md:flex md:flex-row-reverse">
+                <img src="./img/card5.jpeg" alt="" class="max-h-[280px] w-[50%] md:h-[400px] object-cover">
+                <div class="text-center space-y-6 py-8 w-[50%] place-content-center">
+                    <h3 class="text-2xl font-bold">Starbucks Stories</h3>
+                    <p>Continuing to inspire and nurture the human spirit–one person, one cup and one neighborhood at a time.</p>
+                    <a href="" class="btn-light !max-w-[200px]">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu end -->
+
+    <!-- link start -->
+     <div class="links">
+        <div class="container">
+            <div class="links__wrapper">
+                <div class="links__items">
+                    <h4><span>About Us</span><i class="fa-solid fa-chevron-down"></i></h4>
+                    <ul>
+                        <li><a href="">Our Company</a></li>
+                        <li><a href="">Stories & News</a></li>
+                        <li><a href="">Customer Service</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="links__items">
+                    <h4><span>Order Online</span><i class="fa-solid fa-chevron-down"></i></h4>
+                    <ul>
+                        <li><a href="">Order on the App</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Send Gifts</a></li>
+                        <li><a href="">Grab Partnership</a></li>
+                    </ul>
+                </div>
+                <div class="links__items">
+                    <h4><span>Rewards</span><i class="fa-solid fa-chevron-down"></i></h4>
+                    <ul>
+                        <li><a href="">My Account</a></li>
+                        <li><a href="">View Transactions</a></li>
+                        <li><a href="">Reload</a></li>
+                        <li><a href="">FAQs</a></li>
+                    </ul>
+                </div>
+                <h4 class="md:font-bold md:text-[20px]"><span>Social Impact</span></h4>
+                <h4 class="md:font-bold md:text-[20px]"><span>Promotions</span></h4>
+                <h4 class="hidden md:block text-[24px] rotate-[-90deg] font-extrabold font-roboto lg:inline-block pt-[140px] h-[20px] w-[120px]">Starbucks®</h4>
+            </div>
+        </div>
+     </div>
+
+     <!-- footer -->
+     <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__socials border-t-1 border-t-gray-300">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3 md:flex md:flex-row md:justify-between">
+                    <ul class="copyright">
+                        <li><a href="">Web Accessbility</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Site Map</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                    </ul>
+                    <span class="text-sm">
+                        ©2025 Starbucks Coffee. All rights reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #00754a;
+    --color-darkGreen: #1e3932;
+    --color-lightGreen : #d4e9e2;
+    --color-lightYellow: #faf6ee;
+    --color-lightBlue : #dbe6f2;
+    --color-darkGray: #545454;
+    --color-dark: #1b1e1d;
+    --color-light: #ffffff;
+
+    --font-roboto: "Roboto", "sans-serif";
+}
+
+@layer base{
+    p, li, a{
+        @apply text-base;
+    }
+}
+
+@layer components {
+    .container{
+        @apply max-w-[90rem] p-4 w-full mx-auto place-content-center;
+    }
+
+    .header{
+        @apply bg-light shadow-md relative;
+    }
+
+    .branding{
+        @apply flex items-center gap-12 py-2;
+    }
+
+    .branding img{
+        @apply w-20;
+    }
+
+    .header__wrapper{
+        @apply flex items-center justify-between;
+    }
+
+    .branding .header__navd{
+        @apply hidden md:flex md:gap-10
+    }
+    .branding .header__navd li a{
+        @apply font-bold text-sm text-dark hover:text-primary uppercase;
+    }
+
+    .header__action {
+        @apply bg-light absolute top-[87px] right-0 w-0 h-[90vh] px-0 pt-0 overflow-hidden transition-all shadow-md z-50;
+    }
+
+    .header__action.open {
+        @apply w-[80%] px-10 pt-10 transition-all;
+    }
+
+    .header__action .header__navm{
+        @apply border-b-gray-400 border-b-[2px] pb-5 flex flex-col gap-5;
+    }
+
+    .header__action .header__navm li:hover a{
+        @apply text-primary;
+    }
+
+    .header__action .header__navm li a{
+        @apply font-medium text-xl text-dark;
+    }
+
+    .header__action .header__btn a{
+        @apply flex gap-[1rem] items-center hover:text-primary;
+    }
+
+    .header__action .header__signIn{
+        @apply space-y-4 pt-2 md:flex-row gap-5;
+    }
+
+    /* burger menu */
+
+    .burger__menu{
+        @apply md:hidden;
+    }
+
+    .burger__menu span{
+        @apply w-[1.5rem] h-[.2rem] bg-gray-700 block rounded-full transition-all;
+    }
+
+    .burger__menu span:nth-child(2){
+        @apply my-1;
+    }
+
+    .burger__menu.open span:first-child{
+        @apply transform translate-y-[9px] rotate-[225deg] transition-all;
+    }
+
+   .burger__menu.open span:nth-child(2){
+        @apply opacity-0 transition-all;
+   }
+   .burger__menu.open span:last-child{
+        @apply transform translate-y-[-6px] rotate-[-225deg] transition-all;
+   }
+ 
+   /* links */
+    .links{
+        @apply py-6 px-4 border-t-1 border-t-gray-300;
+    }
+
+    .links__wrapper{
+        @apply flex flex-col gap-5 md:grid md:grid-cols-6 md:pb-6;
+    }
+
+    .links__items ul{
+        @apply max-h-0 overflow-hidden transition-all flex flex-col gap-4 md:max-h-[50rem] md:pt-6;
+    }
+    .links__items ul.open{
+        @apply max-h-[50rem] transition-all pt-6;
+    }
+
+    .links__items h4 i.open{
+        @apply transform rotate-100 transition-all;
+    }
+    .links__items ul li{
+        @apply text-darkGray hover:text-dark
+    }
+    .links__items h4{
+        @apply flex justify-between items-center md:font-bold md:text-[20px] md:pb-4;
+    }
+    .links__items h4 i{
+        @apply md:invisible;
+    }
+
+    /* footer */
+.footer__socials ul{
+    @apply flex gap-7 py-6;
+}
+
+.footer__socials ul li a i{
+    @apply text-2xl
+}
+
+.copyright{
+    @apply flex flex-col gap-4 md:flex md:flex-row;
+}
+}
+
+
+
+
+
+
+
+@layer utilities{
+    .btn-light {
+        @apply px-4 py-1 border-[1px] border-dark rounded-full inline-block text-base font-bold hover:bg-darkGray/10 max-w-[90px];
+    }   
+
+    .btn-dark{
+        @apply text-white bg-dark px-4 py-1 border-[1px] border-dark rounded-full inline-block text-base font-bold hover:bg-darkGray max-w-[110px];
+    }
+}
