@@ -141,9 +141,75 @@
 .copyright{
     @apply flex flex-col gap-4 md:flex md:flex-row;
 }
+/* steps start*/
+
+.info__wrapper{
+    @apply py-16 flex flex-col gap-10 md:gap-16;
 }
 
+.info__cards .info__cardContents{
+    @apply flex flex-row gap-5 md:flex md:flex-col md:items-center md:text-center md:gap-10;
+}
 
+.info__number{
+    @apply text-primary border-1 rounded-full border-primary px-4 py-1 h-14 w-14 text-center text-4xl font-bold;
+}
+
+.info__cards{
+    @apply flex flex-col gap-9 md:grid md:grid-cols-3;
+}
+/* steps end*/
+
+
+/* coffee tab start */
+.menuCoffee__nav{
+    @apply bg-lightGreen pt-10;
+}
+
+.menuCoffee__nav h4{
+    @apply text-2xl font-semibold text-center;
+}
+
+.menuCoffee__nav ul{
+    @apply flex items-center justify-center mt-6;
+}
+
+.menuCoffee__nav ul li{
+    @apply px-4 pb-5 border-b-4 border-transparent;
+}
+.menuCoffee__nav ul li.active{
+    @apply border-b-4 border-primary ;
+}
+
+.menuCoffee__nav ul li a{
+    @apply text-lg font-semibold ;
+}
+.menuCoffee__nav ul li a span{
+    @apply text-yellow-500 ;
+}
+
+.coffee__tab{
+    @apply bg-lightBlue relative h-[500px] md:h-[290px];
+}
+
+.coffee__item{
+    @apply absolute opacity-0 transition-all top-0 px-4 md:grid md:grid-cols-2 md:items-center md:max-w-[50rem] md:left-[25%] md:place-self-center;
+}
+.coffee__item.active{
+    @apply opacity-100 transition-all;
+}
+.coffee__text h5{
+    @apply text-xl font-semibold text-center;
+}
+.coffee__text p{
+    @apply text-center;
+}
+
+.coffee__text {
+    @apply flex flex-col gap-4 mt-4;
+}
+/* coffee tab end */
+}
 
 
 

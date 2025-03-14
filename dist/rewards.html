@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Rewards</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://kit.fontawesome.com/a6726e13c6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Header START -->
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="img/sblogo.svg" alt="" class="w-12">
+                    <ul class="header__navd">
+                        <li><a href="home.html">MENU</a></li>
+                        <li><a href="rewards.html">REWARDS</a></li>
+                        <li><a href="#">MERCHANDISE</a></li>
+                    </ul>
+                </div>
+                <div class="header__action">
+                    <ul class="header__navm">
+                        <li><a href="home.html">MENU</a></li>
+                        <li><a href="rewards.html">REWARDS</a></li>
+                        <li><a href="#">MERCHANDISE</a></li>
+                    </ul>
+                    <div class="header__btn">
+                        <div class="header__signIn">
+                            <a href="#"><i class="fa-solid fa-location-dot"></i>Find a Store</a>
+                            <div>
+                                <a href="" class="btn-light">Sign In</a>
+                                <a href="" class="btn-dark">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__btn hidden md:block">
+                    <div class="header__signIn md:flex md:gap-4 md:items-center">
+                        <a href="#" class="flex gap-2 items-center">
+                            <i class="fa-solid fa-location-dot"></i>Find a Store</a>
+                        <div class="flex flex-col gap-2 md:flex md:flex-row md:gap-4">
+                            <a href="" class="btn-light">Sign In</a>
+                            <a href="" class="btn-dark">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger__menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header END -->
+
+    <!-- hero start -->
+    <div class="relative">
+        <img src="./img/rewards-banner.jpeg" alt="" class="h-[480px] md:h-[75vh] object-cover w-full">
+        <div class="absolute top-[20%] md:top-[25%] md:mx-[10%]">
+            <div class="container space-y-6">
+                <h1 class="text-[40px] font-roboto font-bold text-light md:text-[80px]">Free Coffee <br> a Tap Away</h1>
+                <a href="" class="btn-light !max-w-[200px] text-light !border-light">Join in the app</a>
+            </div>
+        </div>
+    </div>
+    <!-- hero end -->
+
+    <!-- steps start -->
+    <div class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="space-y-2">
+                    <h4 class="text-center text-2xl font-bold">Getting started is easy</h4>
+                    <p class="text-center">Earn Stars and get rewarded in a few easy steps</p>
+                </div>
+                <div class="info__cards">
+                    <div class="info__cardContents">
+                        <span class="info__number">1</span>
+                        <div>
+                            <h3 class="text-base font-bold">Create an account</h3>
+                            <p>To get started, <a href="" class="text-primary underline hover:no-underline">join now</a>. You can also <a href="" class="text-primary underline hover:no-underline">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+                            <p class="py-4">*You can now join even without a Starbucks Card.</p>
+                        </div>
+                    </div>
+                    <div class="info__cardContents">
+                        <span class="info__number">2</span>
+                        <div>
+                            <h3 class="text-base font-bold">Order and pay how you'd like</h3>
+                            <p>Use cash, credit/debit card or save some time and pay right through the app. You'll collect Stars all ways. <a href="" class="text-primary underline hver:no-underline">Learn how</a></p> 
+                        </div>
+                    </div>
+                    <div class="info__cardContents">
+                        <span class="info__number">3</span>
+                        <div>
+                            <h3 class="text-base font-bold">Collect Stars, earn Rewards</h3>
+                            <p>When you collect Stars, you can redeem them for Rewards — like free food and drinks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- steps end -->
+
+    <!-- coffee start -->
+    <div class="menuCoffee">
+        <div class="menuCoffee__wrapper">
+            <div class="menuCoffee__nav">
+                <h4>Get your favorites for free</h4>
+                <ul>
+                    <li id="coffee-1" class="coffee__nav__link active"><a href="javascript:void(0)">25 <span>★</span></a></li>
+                    <li id="coffee-2" class="coffee__nav__link"><a href="javascript:void(0)">100 <span>★</span></a></li>
+                    <li id="coffee-3" class="coffee__nav__link"><a href="javascript:void(0)">200 <span>★</span></a></li>
+                    <li id="coffee-4" class="coffee__nav__link"><a href="javascript:void(0)">300 <span>★</span></a></li>
+                    <li id="coffee-5" class="coffee__nav__link"><a href="javascript:void(0)">400 <span>★</span></a></li>
+                </ul>
+            </div>
+            <div class="coffee__tab">
+                <div id="coffee-1-content" class="coffee__item active">
+                    <img src="img/rewards/25.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Customize your drink</h5>
+                        <p>Make your drink just right with an extra espresso shot or a dash of your favorite syrup</p>
+                    </div>
+                </div>
+                <div id="coffee-2-content" class="coffee__item">
+                    <img src="img/rewards/100.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h5>
+                        <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+                    </div>
+                </div>
+                <div id="coffee-3-content" class="coffee__item">
+                    <img src="img/rewards/200.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h5>
+                        <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+                    </div>
+                </div>
+                <div id="coffee-4-content" class="coffee__item">
+                    <img src="img/rewards/300.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Sandwich, protein box or at-home coffee</h5>
+                        <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®./p>
+                    </div>
+                </div>
+                <div id="coffee-5-content" class="coffee__item">
+                    <img src="img/rewards/400.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Select Starbucks® merchandise</h5>
+                        <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- coffee end -->
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__socials border-t-1 border-t-gray-300">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3 md:flex md:flex-row md:justify-between">
+                    <ul class="copyright">
+                        <li><a href="">Web Accessbility</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Site Map</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                    </ul>
+                    <span class="text-sm">
+                        ©2025 Starbucks Coffee. All rights reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+     <script src="./js/script.js"></script>
+</body>
+</html>
